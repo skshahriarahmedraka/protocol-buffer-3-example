@@ -1,0 +1,20 @@
+syntax = "proto3" ;
+
+
+message MyMessage {
+    int64 id = 1;
+    string firstName =2 ;
+    bool isValid =3 ;
+}
+
+/*
+default values 
+bool : false 
+number (int32 ... etc ) : 0
+string : empty string 
+bytes : empty bytes 
+enum : first value 
+repeated : empty list 
+
+
+*/

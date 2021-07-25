@@ -1,0 +1,40 @@
+// this is a proto3 syntex
+
+syntax = "proto3"
+
+message Person {
+    int64 age =1 ;
+    string firstName = 2 ;
+    string lastName = 3 ;
+    /* small picture of .jpeg format */
+    bytes smallPicture =4 ;
+    bool isProfileVerified =5 ;
+    // height in inci
+    float height=6 ;
+    // optional phone number
+    repeated string phoneNumber =7;
+
+    enum eye_color {
+        UnknownColor =0 ;
+        eyeGreen =1;
+        eyeBrown =2 ;
+        eyeBlue =3;
+    }
+
+    eye_color eyeColor =8;
+
+    // person's birthday
+
+    Date birthday =9;
+
+}
+
+
+message Date {
+    // year of date ,from 1-9999 , 0 if year is not set
+    int32 year =1;
+    // month of year ,value 1-12 
+    int32 month =2;
+    // day of month , value 1-31
+    int32 day = 3 ;
+}

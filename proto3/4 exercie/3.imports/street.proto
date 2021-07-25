@@ -1,0 +1,10 @@
+syntax = "proto3" ;
+
+import "4 exercie/3.imports/city.proto" ;
+
+
+message Street {
+    string name =1 ;
+    City city =2 ;
+    
+}

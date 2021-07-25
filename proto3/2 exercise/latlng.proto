@@ -1,0 +1,8 @@
+syntax ="proto3" ;
+
+message LatLng {
+    // lantitude is degrees , it must be in the range [-90.0,+90.0]
+    double latitude =1;
+    // longtitude  is degree , it must be in the range [-180.0, +180.0]
+    double longitude =2 ;
+}

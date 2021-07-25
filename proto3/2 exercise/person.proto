@@ -1,0 +1,7 @@
+syntax ="proto3" ;
+
+message Person {
+    string firstName =1 ;
+    repeated string middleName =2;
+    string lastName=3 ;
+}

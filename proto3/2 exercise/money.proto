@@ -1,0 +1,18 @@
+syntax ="proto3" ;
+
+message Money {
+    // the 3-letter currency code defined in ISO 4217
+    string currency_code =1 ;
+
+    // the whole units of amount 
+    // currency code "USD" is us dollar
+    int32 units =2 ;
+    // number of nano 10^-9 unite amount
+    int32 nanos =3 ;
+}
+/* 
+if money is 24.53 USD
+unites =24
+nanos =53
+
+*/
