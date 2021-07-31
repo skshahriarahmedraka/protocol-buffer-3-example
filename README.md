@@ -66,13 +66,17 @@ sudo pip3 install protobuf
  export PATH=$PATH:$GOPATH/bin
  ```
  example :
- ```
- protoc --go_out=. *.proto
- ```
- ```
- protoc -I=src/ --go_out=plugins=grpc:src/ src/simple/simple.proto
- ```
- ```
- protoc -I=src/ --go_out=src/ src/simple/simple.proto
+```
+protoc --go_out=. *.proto
+```
+```
+protoc -I=src/ --go_out=src/ src/simple/simple.proto
+```
+grpc (golang) : 
+```
+protoc -I=src/ --go_out=plugins=grpc:src/ src/simple/simple.proto
 ```
 
+```
+protoc -I proto/ proto/currency.proto --go_out=plugins=grpc:proto/
+```

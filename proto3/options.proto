@@ -1,0 +1,1 @@
+option go_package ="github.com/golang/protobuf/ptypes/duration" ;

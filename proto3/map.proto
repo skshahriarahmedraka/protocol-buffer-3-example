@@ -1,0 +1,6 @@
+syntax = "proto3" ;
+
+message MyMessage {
+    int32 id =1 ;
+    map<string,result> results =2;
+}

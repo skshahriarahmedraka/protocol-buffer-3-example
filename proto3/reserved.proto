@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message MyMessage {
+    int32 id =1 ;
+    string firstName =2 ;
+}
+
+//  ////////////////////////////////////
+
+message MyMessage2 {
+    reserved 2 ;
+    reserved "firstName";
+    int32 id =1 ;
+}

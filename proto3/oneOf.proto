@@ -1,0 +1,11 @@
+syntax ="proto3";
+
+message MyMessage {
+    int32 id =1;
+    oneof person {
+        string name =2;
+        bool present =3;
+    }
+}
+
+

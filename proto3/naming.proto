@@ -1,0 +1,5 @@
+syntax ="proto3";
+
+message MyLongMessage {
+    string my_long_field =1;
+}
